@@ -29,10 +29,10 @@ This project aims to:
 
 ## Project Structure
 
-- `client.txt`  
+- `client.md`  
   Scripts and configuration for the RDP client VM.
 
-- `server.txt` 
+- `server.md` 
   Scripts and setup for the RDP server VM.
 
 - `connect_rdp.py`  
