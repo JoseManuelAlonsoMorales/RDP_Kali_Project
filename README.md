@@ -29,7 +29,7 @@ This project aims to:
 
 ## Project Structure
 
-`client/`  
+- `client/`  
   Scripts and configuration for the RDP client VM.
 
 - `server/`  
