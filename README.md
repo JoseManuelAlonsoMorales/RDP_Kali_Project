@@ -66,5 +66,5 @@ This project is intended for **educational purposes only**.
 
 ## Authors
 
-José Manuel Alonso Morales and Jesús Alexis Martínez Arenas.
+José Manuel Alonso Morales and Jesús Alexis Martínez Arenas  
 April 2025
