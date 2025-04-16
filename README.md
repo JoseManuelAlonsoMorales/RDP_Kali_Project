@@ -29,15 +29,32 @@ This project aims to:
 
 ## Project Structure
 
-- client/ # Scripts and configuration for the RDP client VM
-- server/ # Scripts and setup for the RDP server VM
-- connect_rdp.py # Connects to RDP server using xfreerdp3
-- scanner.py # Scans the internal network for active RDP sessions
-- brute_force.py # Performs a brute-force attack on RDP using hydra
-- session_logger.py # Logs active RDP session IPs and timestamps to a text file
-- main.py # Central script that runs scanning, attack, connection an session loger logic
-- users.txt # List of potential usernames
-- passwords.txt # List of potential passwords
+`client/`  
+  Scripts and configuration for the RDP client VM.
+
+- `server/`  
+  Scripts and setup for the RDP server VM.
+
+- `connect_rdp.py`  
+  Connects to the RDP server using `xfreerdp3`.
+
+- `scanner.py`  
+  Scans the internal network for active RDP sessions.
+
+- `brute_force.py`  
+  Performs a brute-force attack on RDP using `hydra`.
+
+- `session_logger.py`  
+  Logs active RDP session IPs and timestamps to a text file.
+
+- `main.py`  
+  Central script that runs scanning, attack, connection, and session logger logic.
+
+- `users.txt`  
+  List of potential usernames for brute-force testing.
+
+- `passwords.txt`  
+  List of potential passwords for brute-force testing.
 
 ---
 
