@@ -1,4 +1,4 @@
-# Instructions to Add and Run a Python File on Kali Linux
+# Instructions to add and run a Python file on Kali Linux
 
 1. **Open the Python file in the nano editor (you can replace `python_file` with the name of your file):**
 
