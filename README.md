@@ -32,7 +32,7 @@ This project aims to:
 - `client.md`  
   Scripts and configuration for the RDP client VM.
 
-- `server.md` 
+- `server.md`  
   Scripts and setup for the RDP server VM.
 
 - `connect_rdp.py`  
