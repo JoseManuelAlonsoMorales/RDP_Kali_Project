@@ -3,13 +3,6 @@ import subprocess
 import sys
 
 def connect_rdp(ip, user, password):
-    """
-    Connects to a remote machine via RDP using xfreerdp.
-    Parameters:
-        ip (str): IP address of the remote machine.
-        user (str): Username to log in with.
-        password (str): Password for the user.
-    """
     print(f"Connecting to {ip} as user '{user}'...")
 
     try:
