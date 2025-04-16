@@ -44,9 +44,6 @@ This project aims to:
 - `brute_force.py`  
   Performs a brute-force attack on RDP using `hydra`.
 
-- `session_logger.py`  
-  Logs active RDP session IPs and timestamps to a text file.
-
 - `main.py`  
   Central script that runs scanning, attack, connection, and session logger logic.
 
