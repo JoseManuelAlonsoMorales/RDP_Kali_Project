@@ -3,21 +3,35 @@ import subprocess
 import sys
 
 def connect_rdp(ip, user, password):
-    print(f"Conectando a {ip} con el usuario {user}…")
+    """
+    Connects to a remote machine via RDP using xfreerdp.
+    Parameters:
+        ip (str): IP address of the remote machine.
+        user (str): Username to log in with.
+        password (str): Password for the user.
+    """
+    print(f"Connecting to {ip} as user '{user}'...")
+
     try:
+        # Build and execute the xfreerdp3 command
         subprocess.run(
             ["xfreerdp3", f"/v:{ip}", f"/u:{user}", f"/p:{password}", "/cert:ignore"],
             check=True
         )
-        print("Conexión RDP finalizada.")
+        print("RDP session ended.")
+
     except subprocess.CalledProcessError as e:
-        print(f"Error al conectar vía RDP: {e}")
+        print(f"Error during RDP connection: {e}")
+
     except FileNotFoundError:
-        print("El comando 'xfreerdp3' no está instalado. Ejecuta:\n  sudo apt install freerdp3-x11")
+        print("The 'xfreerdp3' command is not installed. You can install it using:\n  sudo apt install freerdp3-x11")
 
 if __name__ == "__main__":
+    # Ensure the user provides exactly 3 arguments (IP, username, password)
     if len(sys.argv) != 4:
-        print(f"Uso: {sys.argv[0]} <IP> <usuario> <contraseña>")
+        print(f"Usage: {sys.argv[0]} <IP> <username> <password>")
         sys.exit(1)
+
+    # Unpack arguments and call the connect_rdp function
     _, ip, user, password = sys.argv
     connect_rdp(ip, user, password)
