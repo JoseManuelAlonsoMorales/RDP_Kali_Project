@@ -1,35 +1,30 @@
 # Instrucciones para preparar el entorno del cliente RDP en Kali Linux
 
-1. Actualizar el sistema:
-   Ejecuta los siguientes comandos para actualizar los paquetes y el sistema:
+1. Actualización de paquetes y del sistema:
 
    sudo apt update && sudo apt upgrade -y
 
-2. Instalar xfreerdp3 y hydra:
-   Usa el siguiente comando para instalar las herramientas necesarias:
+2. Instalación de las herramientas necesarias:
 
    sudo apt install -y xfreerdp3-x11 hydra
 
-3. Configurar la dirección IP fija para la interfaz de red:
-   Primero, limpia las configuraciones actuales de la red:
+3. Reestablecimiento de las configuraciones actuales de red:
 
    sudo ip addr flush dev eth0
 
-   Luego, asigna una nueva dirección IP:
+4. Asignación de una nueva ip:
 
    sudo ip addr add 192.168.10.2/24 dev eth0
 
-   Finalmente, activa la interfaz de red:
+5. Activación de la interfaz de red:
 
    sudo ip link set eth0 up
 
-4. Conectar al servidor RDP:
-   Para conectar al servidor, usa el siguiente comando con las credenciales adecuadas:
+6. Conexión al servidor RDP:
 
    xfreerdp3 /u:kali /p:kali /v:192.168.10.1 /cert:ignore
 
-5. Cerrar sesión RDP:
-   Una vez que termines, cierra la sesión RDP ejecutando:
+6. Cerrar sesión RDP:
 
    pkill xfreerdp3
 
