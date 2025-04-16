@@ -1,15 +1,3 @@
----
-title: RDP_Kali_Project
-description: Implementation and testing of Remote Desktop Protocol (RDP) on Kali Linux for remote administration, cybersecurity, and pentesting purposes.
-author: José Manuel Alonso Morales and Jesús Alexis MArtínez Arenas
-version: 1.0
-date: 2025-04-16
-tags: [RDP, Kali Linux, cybersecurity, pentesting, Python, VirtualBox]
----
-
-# RDP_Kali_Project
-
-
 # RDP_Kali_Project
 
 ## Project Overview
@@ -50,4 +38,16 @@ This project aims to:
 - main.py # Central script that runs scanning, attack, connection an session loger logic
 - users.txt # List of potential usernames
 - passwords.txt # List of potential passwords
-RDP_Kali_Project/ │ ├── client/ # Scripts and configuration for the RDP client VM │ └── install_xfreerdp.sh # (Optional) Script to install xfreerdp3 │ ├── server/ # Scripts and setup for the RDP server VM │ └── install_xrdp_xfce.sh # (Optional) Script to install xrdp and xfce4 │ ├── scripts/ # Python automation and attack scripts │ ├── connect_rdp.py # Connects to RDP server using xfreerdp3 │ ├── scanner.py # Scans the internal network for active RDP sessions │ ├── brute_force.py # Performs a brute-force attack on RDP using hydra │ ├── session_logger.py # Logs active RDP session IPs and timestamps to a text file │ └── main.py # Central script that runs scanning, attack, and connection logic │ ├── dictionaries/ # Username and password dictionaries │ ├── users.txt # List of potential usernames │ └── passwords.txt # List of potential passwords │ ├── docs/ # Documentation and technical notes │ └── setup_guide.md # Step-by-step setup and usage instructions │ 
+
+---
+
+## Disclaimer
+
+This project is intended for **educational purposes only**.
+
+---
+
+## Authors
+
+José Manuel Alonso Morales and Jesús Alexis Martínez Arenas
+April 2025
