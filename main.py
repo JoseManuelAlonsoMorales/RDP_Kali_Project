@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from scanner import scan_network
 from brute_force import brute_force_rdp
 from connect_rdp import connect_rdp
