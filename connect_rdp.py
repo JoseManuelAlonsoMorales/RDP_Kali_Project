@@ -8,7 +8,7 @@ def connect_rdp(ip, user, password):
     try:
         # Build and execute the xfreerdp3 command
         subprocess.run(
-            ["xfreerdp3", f"/v:{ip}", f"/u:{user}", f"/p:{password}", "/cert:ignore"],
+            ["xfreerdp3", f"/v:{ip}", f"/u:{user}", f"/p:{password}", "/cert:ignore", "/sec:rdp"],
             check=True
         )
         print("RDP session ended.")
