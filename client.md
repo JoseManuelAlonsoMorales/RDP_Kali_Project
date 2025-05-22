@@ -14,7 +14,7 @@
 
 4. **Assign a new IP address:**
 
-   `sudo ip addr add 192.168.10.2/24 dev eth0`
+   `sudo ip addr add 192.168.100.101/24 dev eth0`
 
 5. **Enable the network interface:**
 
@@ -22,7 +22,7 @@
 
 6. **Connect to the RDP server:**
 
-   `xfreerdp3 /u:kali /p:kali /v:192.168.10.1 /cert:ignore`
+   `xfreerdp3 /u:kali /p:kali /v:192.168.100.100 /cert:ignore`
 
 7. **Log out from the RDP session:**
 
