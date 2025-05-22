@@ -27,7 +27,7 @@
 
 7. **Assign a new IP address:**
 
-   `sudo ip addr add 192.168.10.1/24 dev eth0`
+   `sudo ip addr add 192.168.100.100/24 dev eth0`
 
 8. **Enable the network interface:**
 
