@@ -6,7 +6,7 @@
 
 2. **Install required tools:**
 
-   `sudo apt install -y xfreerdp3-x11 hydra`
+   `sudo apt install -y freerdp3-x11 hydra`
 
 3. **Reset current network configurations:**
 
