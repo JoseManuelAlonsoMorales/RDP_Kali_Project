@@ -17,7 +17,7 @@ def connect_rdp(ip, user, password):
         print(f"Error during RDP connection: {e}")
 
     except FileNotFoundError:
-        print("The 'xfreerdp3' command is not installed. You can install it using:\n  sudo apt install freerdp3-x11")
+        print("The 'xfreerdp3' command is not installed.")
 
 if __name__ == "__main__":
     # Ensure the user provides exactly 3 arguments (IP, username, password)
